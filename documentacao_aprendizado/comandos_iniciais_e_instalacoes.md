@@ -44,4 +44,9 @@ Como usar:
    ```bash
     pip freeze > requirements.txt
    ```
+## Passo 7: Git e Conventional Commits
 
+Padrão **Conventional Commits** (um padrão muito usado no mercado para deixar o histórico limpo e profissional):
+```bash
+git add .
+git commit -m "chore: setup do ambiente virtual e bibliotecas base do playwright"

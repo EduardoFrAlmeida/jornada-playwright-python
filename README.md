@@ -12,15 +12,16 @@ Este projeto servirá como portfólio demonstrando a evolução de um setup bás
 
 1. Clone o repositório:
    ```bash
-   git clone <https://github.com/EduardoFrAlmeida/jornada-playwright-python>
-
+   git clone https://github.com/EduardoFrAlmeida/jornada-playwright-python
+   ```
 2. Crie e ative o ambiente virtual:
    ```bash
    python -m venv venv
    source venv/bin/activate  # No Linux/Mac
    .\venv\Scripts\activate   # No Windows
-
+  ```
 3. Instale as dependências:
    ```bash
    pip install -r requirements.txt
    playwright install
+   ```

@@ -8,7 +8,7 @@ __pycache__/
 
 
 # Ignora arquivos específicos
-requirements.txt
+
 
 # Ignora todas as extensões específicas
 #*.log
