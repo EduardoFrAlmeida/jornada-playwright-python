@@ -1,0 +1,15 @@
+# Ignora arquivos de sistema
+#.DS_Store
+#Thumbs.db
+
+# Ignora pastas inteiras (ex: dependências)
+venv/
+__pycache__/
+
+
+# Ignora arquivos específicos
+requirements.txt
+
+# Ignora todas as extensões específicas
+#*.log
+#*.zip
