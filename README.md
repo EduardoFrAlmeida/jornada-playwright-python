@@ -25,3 +25,18 @@ Este projeto servirá como portfólio demonstrando a evolução de um setup bás
    pip install -r requirements.txt
    playwright install
    ```
+
+## 📂 Progresso do Portfólio
+
+- [x] **Módulo 1:** Configuração de Ambiente (Python, Virtualenv, Playwright e Pytest).
+- [/] **Módulo 2:** Primeiro Teste Funcional (TodoMVC E2E) e Arquitetura do Playwright.
+- [ ] **Módulo 3:** Utilizando o Playwright Codegen para inspecionar elementos e refatoração de código.
+- [ ] **Módulo 4:** Organizando testes com Pytest (fixtures, asserts, execução paralela e relatórios).
+- [ ] **Módulo 5:** Integração avançada e introdução ao Playwright MCP (Model Context Protocol).
+
+## 🧪 Como rodar os testes
+
+Com o ambiente virtual ativo, execute:
+```bash
+pytest -v --headed
+```
