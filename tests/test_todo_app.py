@@ -36,3 +36,24 @@ def test_deve_adicionar_uma_nova_tarefa(page: Page):
 
 # ESCREVA SEU CÓDIGO DO DESAFIO AQUI EMBAIXO:
 
+def test_deve_marcar_tarefa_como_concluida(page: Page):
+    # 1. Navegar até o site TodoMVC
+    page.goto("https://demo.playwright.dev/todomvc/")
+
+    # 2. Adicionar uma nova tarefa (ex: "Estudar Pytest")
+    campo_tarefa = page.get_by_placeholder("What needs to be done?")
+    campo_tarefa.fill("Estudar Pytest")
+    campo_tarefa.press("Enter")
+
+    # 3. Localizar o checkbox redondo correspondente e marcá-lo usando o método .check()
+    checkbox = page.get_by_role("checkbox", name="Toggle Todo")
+    checkbox.check()
+
+    # 4. Fazer a validação (assert) de que a tarefa está com o estilo concluído (classe "completed")
+    todo_item = page.get_by_test_id("todo-item")
+    expect(todo_item).to_have_class("completed")
+
+
+
+
+
