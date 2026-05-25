@@ -30,13 +30,23 @@ Este projeto servirá como portfólio demonstrando a evolução de um setup bás
 
 - [x] **Módulo 1:** Configuração de Ambiente (Python, Virtualenv, Playwright e Pytest).
 - [x] **Módulo 2:** Primeiro Teste Funcional (TodoMVC E2E) e Arquitetura do Playwright.
-- [/] **Módulo 3:** Utilizando o Playwright Codegen para inspecionar elementos e refatoração de código.
-- [ ] **Módulo 4:** Organizando testes com Pytest (fixtures, asserts, execução paralela e relatórios).
+- [x] **Módulo 3:** Utilizando o Playwright Codegen para inspecionar elementos e refatoração de código.
+- [/] **Módulo 4:** Organizando testes com Pytest (fixtures, asserts, execução paralela e relatórios).
 - [ ] **Módulo 5:** Integração avançada e introdução ao Playwright MCP (Model Context Protocol).
 
 ## 🧪 Como rodar os testes
 
-Com o ambiente virtual ativo, execute:
+### Executar todos os testes de forma tradicional (Headed):
 ```bash
 pytest -v --headed
+```
+
+### Executar testes em paralelo (Headless - ultra rápido):
+```bash
+pytest -n auto
+```
+
+### Gerar relatório HTML de execução:
+```bash
+pytest --html=reports/relatorio.html --self-contained-html
 ```
