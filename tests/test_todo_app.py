@@ -3,9 +3,8 @@ import pytest
 # pyrefly: ignore [missing-import]
 from playwright.sync_api import Page, expect
 
-def test_deve_adicionar_uma_nova_tarefa(page: Page):
-    # 1. Navegar até o site TodoMVC
-    page.goto("https://demo.playwright.dev/todomvc/")
+def test_deve_adicionar_uma_nova_tarefa(todomvc_page: Page):
+    page = todomvc_page
 
     # 2. Localizar o input de nova tarefa pelo placeholder
     campo_tarefa = page.get_by_placeholder("What needs to be done?")
@@ -36,9 +35,8 @@ def test_deve_adicionar_uma_nova_tarefa(page: Page):
 
 # ESCREVA SEU CÓDIGO DO DESAFIO AQUI EMBAIXO:
 
-def test_deve_marcar_tarefa_como_concluida(page: Page):
-    # 1. Navegar até o site TodoMVC
-    page.goto("https://demo.playwright.dev/todomvc/")
+def test_deve_marcar_tarefa_como_concluida(todomvc_page: Page):
+    page = todomvc_page
 
     # 2. Adicionar uma nova tarefa (ex: "Estudar Pytest")
     campo_tarefa = page.get_by_placeholder("What needs to be done?")

@@ -1,4 +1,6 @@
+# pyrefly: ignore [missing-import]
 import pytest
+# pyrefly: ignore [missing-import]
 from playwright.sync_api import Page
 
 @pytest.fixture
@@ -27,3 +29,7 @@ def login_saucedemo(page: Page) -> Page:
 
 # ESCREVA SEU CÓDIGO DO DESAFIO AQUI EMBAIXO:
 
+@pytest.fixture
+def todomvc_page(page: Page) -> Page:
+    page.goto("https://demo.playwright.dev/todomvc/")
+    yield page
