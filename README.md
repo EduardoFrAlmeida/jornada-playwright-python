@@ -66,6 +66,21 @@ pytest --html=reports/relatorio.html --self-contained-html
 
 ---
 
+## ⚙️ Integração Contínua (CI/CD) com GitHub Actions
+
+Este repositório utiliza **GitHub Actions** para automação de testes contínua!
+
+Toda vez que você enviar um código para a branch `main` ou abrir um `Pull Request`, uma máquina virtual Linux é criada automaticamente no servidor do GitHub para:
+1. Clonar o projeto.
+2. Instalar dependências de sistema e bibliotecas (`requirements.txt`).
+3. Baixar navegadores headless do Playwright.
+4. Executar os testes em paralelo (`pytest -n auto`).
+5. Armazenar o relatório de testes (`pytest-html`) como artefato para download.
+
+O arquivo de configuração do workflow está localizado em [.github/workflows/playwright.yml](file:///.github/workflows/playwright.yml).
+
+---
+
 ## 🤖 Integração com IA: Playwright MCP (Model Context Protocol)
 
 Este repositório é **AI-Ready (Compatível com MCP)**! Isso significa que agentes de inteligência artificial de última geração (como Claude Desktop, Cursor e Antigravity) podem rodar este projeto e interagir diretamente com o navegador usando comandos em linguagem natural.
